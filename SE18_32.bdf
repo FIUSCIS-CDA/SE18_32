@@ -4,27 +4,26 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
-Your use of Altera Corporation's design tools, logic functions 
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Altera Program License 
-Subscription Agreement, the Altera Quartus II License Agreement,
-the Altera MegaCore Function License Agreement, or other 
-applicable license agreement, including, without limitation, 
-that your use is for the sole purpose of programming logic 
-devices manufactured by Altera and sold by Altera or its 
-authorized distributors.  Please refer to the applicable 
-agreement for further details.
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
 */
 (header "graphic" (version "1.4"))
 (pin
 	(input)
 	(rect -64 2936 104 2952)
-	(text "INPUT" (rect 125 0 154 10)(font "Arial" (font_size 6)))
-	(text "A[17..0]" (rect 5 0 44 11)(font "Arial" ))
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "A[17..0]" (rect 5 0 43 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -34,13 +33,13 @@ agreement for further details.
 		(line (pt 109 4)(pt 113 8))
 		(line (pt 109 12)(pt 113 8))
 	)
-	(text "VCC" (rect 128 7 149 17)(font "Arial" (font_size 6)))
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
 )
 (pin
 	(output)
 	(rect 456 -40 632 -24)
-	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
-	(text "Y[31..0]" (rect 90 0 128 11)(font "Arial" ))
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "Y[31..0]" (rect 90 0 130 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -53,659 +52,21 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect 256 -64 352 32)
-	(text "SameBit" (rect 5 0 54 13)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 81 26 92)(font "Arial" ))
+	(rect 256 2912 352 3008)
+	(text "SameBit" (rect 5 0 51 14)(font "Arial" (font_size 8)))
+	(text "bit00" (rect 8 81 31 93)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
-		(text "Ain" (rect 0 0 20 13)(font "Arial" (font_size 8)))
-		(text "Ain" (rect 21 27 41 40)(font "Arial" (font_size 8)))
+		(text "Ain" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "Ain" (rect 21 27 39 41)(font "Arial" (font_size 8)))
 		(line (pt 0 32)(pt 16 32))
 	)
 	(port
 		(pt 96 32)
 		(output)
-		(text "Aout" (rect 0 0 27 13)(font "Arial" (font_size 8)))
-		(text "Aout" (rect 48 27 75 40)(font "Arial" (font_size 8)))
-		(line (pt 96 32)(pt 80 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 80 80))
-	)
-)
-(symbol
-	(rect 256 32 352 128)
-	(text "SameBit" (rect 5 0 54 13)(font "Arial" (font_size 8)))
-	(text "inst2" (rect 8 81 32 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "Ain" (rect 0 0 20 13)(font "Arial" (font_size 8)))
-		(text "Ain" (rect 21 27 41 40)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 96 32)
-		(output)
-		(text "Aout" (rect 0 0 27 13)(font "Arial" (font_size 8)))
-		(text "Aout" (rect 48 27 75 40)(font "Arial" (font_size 8)))
-		(line (pt 96 32)(pt 80 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 80 80))
-	)
-)
-(symbol
-	(rect 256 128 352 224)
-	(text "SameBit" (rect 5 0 54 13)(font "Arial" (font_size 8)))
-	(text "inst3" (rect 8 81 32 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "Ain" (rect 0 0 20 13)(font "Arial" (font_size 8)))
-		(text "Ain" (rect 21 27 41 40)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 96 32)
-		(output)
-		(text "Aout" (rect 0 0 27 13)(font "Arial" (font_size 8)))
-		(text "Aout" (rect 48 27 75 40)(font "Arial" (font_size 8)))
-		(line (pt 96 32)(pt 80 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 80 80))
-	)
-)
-(symbol
-	(rect 256 224 352 320)
-	(text "SameBit" (rect 5 0 54 13)(font "Arial" (font_size 8)))
-	(text "inst4" (rect 8 81 32 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "Ain" (rect 0 0 20 13)(font "Arial" (font_size 8)))
-		(text "Ain" (rect 21 27 41 40)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 96 32)
-		(output)
-		(text "Aout" (rect 0 0 27 13)(font "Arial" (font_size 8)))
-		(text "Aout" (rect 48 27 75 40)(font "Arial" (font_size 8)))
-		(line (pt 96 32)(pt 80 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 80 80))
-	)
-)
-(symbol
-	(rect 256 320 352 416)
-	(text "SameBit" (rect 5 0 54 13)(font "Arial" (font_size 8)))
-	(text "inst5" (rect 8 81 32 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "Ain" (rect 0 0 20 13)(font "Arial" (font_size 8)))
-		(text "Ain" (rect 21 27 41 40)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 96 32)
-		(output)
-		(text "Aout" (rect 0 0 27 13)(font "Arial" (font_size 8)))
-		(text "Aout" (rect 48 27 75 40)(font "Arial" (font_size 8)))
-		(line (pt 96 32)(pt 80 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 80 80))
-	)
-)
-(symbol
-	(rect 256 416 352 512)
-	(text "SameBit" (rect 5 0 54 13)(font "Arial" (font_size 8)))
-	(text "inst6" (rect 8 81 32 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "Ain" (rect 0 0 20 13)(font "Arial" (font_size 8)))
-		(text "Ain" (rect 21 27 41 40)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 96 32)
-		(output)
-		(text "Aout" (rect 0 0 27 13)(font "Arial" (font_size 8)))
-		(text "Aout" (rect 48 27 75 40)(font "Arial" (font_size 8)))
-		(line (pt 96 32)(pt 80 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 80 80))
-	)
-)
-(symbol
-	(rect 256 512 352 608)
-	(text "SameBit" (rect 5 0 54 13)(font "Arial" (font_size 8)))
-	(text "inst7" (rect 8 81 32 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "Ain" (rect 0 0 20 13)(font "Arial" (font_size 8)))
-		(text "Ain" (rect 21 27 41 40)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 96 32)
-		(output)
-		(text "Aout" (rect 0 0 27 13)(font "Arial" (font_size 8)))
-		(text "Aout" (rect 48 27 75 40)(font "Arial" (font_size 8)))
-		(line (pt 96 32)(pt 80 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 80 80))
-	)
-)
-(symbol
-	(rect 256 608 352 704)
-	(text "SameBit" (rect 5 0 54 13)(font "Arial" (font_size 8)))
-	(text "inst8" (rect 8 81 32 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "Ain" (rect 0 0 20 13)(font "Arial" (font_size 8)))
-		(text "Ain" (rect 21 27 41 40)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 96 32)
-		(output)
-		(text "Aout" (rect 0 0 27 13)(font "Arial" (font_size 8)))
-		(text "Aout" (rect 48 27 75 40)(font "Arial" (font_size 8)))
-		(line (pt 96 32)(pt 80 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 80 80))
-	)
-)
-(symbol
-	(rect 256 704 352 800)
-	(text "SameBit" (rect 5 0 54 13)(font "Arial" (font_size 8)))
-	(text "inst9" (rect 8 81 32 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "Ain" (rect 0 0 20 13)(font "Arial" (font_size 8)))
-		(text "Ain" (rect 21 27 41 40)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 96 32)
-		(output)
-		(text "Aout" (rect 0 0 27 13)(font "Arial" (font_size 8)))
-		(text "Aout" (rect 48 27 75 40)(font "Arial" (font_size 8)))
-		(line (pt 96 32)(pt 80 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 80 80))
-	)
-)
-(symbol
-	(rect 256 800 352 896)
-	(text "SameBit" (rect 5 0 54 13)(font "Arial" (font_size 8)))
-	(text "inst10" (rect 8 81 38 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "Ain" (rect 0 0 20 13)(font "Arial" (font_size 8)))
-		(text "Ain" (rect 21 27 41 40)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 96 32)
-		(output)
-		(text "Aout" (rect 0 0 27 13)(font "Arial" (font_size 8)))
-		(text "Aout" (rect 48 27 75 40)(font "Arial" (font_size 8)))
-		(line (pt 96 32)(pt 80 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 80 80))
-	)
-)
-(symbol
-	(rect 256 896 352 992)
-	(text "SameBit" (rect 5 0 54 13)(font "Arial" (font_size 8)))
-	(text "inst11" (rect 8 81 37 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "Ain" (rect 0 0 20 13)(font "Arial" (font_size 8)))
-		(text "Ain" (rect 21 27 41 40)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 96 32)
-		(output)
-		(text "Aout" (rect 0 0 27 13)(font "Arial" (font_size 8)))
-		(text "Aout" (rect 48 27 75 40)(font "Arial" (font_size 8)))
-		(line (pt 96 32)(pt 80 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 80 80))
-	)
-)
-(symbol
-	(rect 256 992 352 1088)
-	(text "SameBit" (rect 5 0 54 13)(font "Arial" (font_size 8)))
-	(text "inst12" (rect 8 81 38 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "Ain" (rect 0 0 20 13)(font "Arial" (font_size 8)))
-		(text "Ain" (rect 21 27 41 40)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 96 32)
-		(output)
-		(text "Aout" (rect 0 0 27 13)(font "Arial" (font_size 8)))
-		(text "Aout" (rect 48 27 75 40)(font "Arial" (font_size 8)))
-		(line (pt 96 32)(pt 80 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 80 80))
-	)
-)
-(symbol
-	(rect 256 1088 352 1184)
-	(text "SameBit" (rect 5 0 54 13)(font "Arial" (font_size 8)))
-	(text "inst13" (rect 8 81 38 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "Ain" (rect 0 0 20 13)(font "Arial" (font_size 8)))
-		(text "Ain" (rect 21 27 41 40)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 96 32)
-		(output)
-		(text "Aout" (rect 0 0 27 13)(font "Arial" (font_size 8)))
-		(text "Aout" (rect 48 27 75 40)(font "Arial" (font_size 8)))
-		(line (pt 96 32)(pt 80 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 80 80))
-	)
-)
-(symbol
-	(rect 256 1184 352 1280)
-	(text "SameBit" (rect 5 0 54 13)(font "Arial" (font_size 8)))
-	(text "inst14" (rect 8 81 38 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "Ain" (rect 0 0 20 13)(font "Arial" (font_size 8)))
-		(text "Ain" (rect 21 27 41 40)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 96 32)
-		(output)
-		(text "Aout" (rect 0 0 27 13)(font "Arial" (font_size 8)))
-		(text "Aout" (rect 48 27 75 40)(font "Arial" (font_size 8)))
-		(line (pt 96 32)(pt 80 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 80 80))
-	)
-)
-(symbol
-	(rect 256 1280 352 1376)
-	(text "SameBit" (rect 5 0 54 13)(font "Arial" (font_size 8)))
-	(text "inst15" (rect 8 81 38 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "Ain" (rect 0 0 20 13)(font "Arial" (font_size 8)))
-		(text "Ain" (rect 21 27 41 40)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 96 32)
-		(output)
-		(text "Aout" (rect 0 0 27 13)(font "Arial" (font_size 8)))
-		(text "Aout" (rect 48 27 75 40)(font "Arial" (font_size 8)))
-		(line (pt 96 32)(pt 80 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 80 80))
-	)
-)
-(symbol
-	(rect 256 1376 352 1472)
-	(text "SameBit" (rect 5 0 54 13)(font "Arial" (font_size 8)))
-	(text "inst16" (rect 8 81 38 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "Ain" (rect 0 0 20 13)(font "Arial" (font_size 8)))
-		(text "Ain" (rect 21 27 41 40)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 96 32)
-		(output)
-		(text "Aout" (rect 0 0 27 13)(font "Arial" (font_size 8)))
-		(text "Aout" (rect 48 27 75 40)(font "Arial" (font_size 8)))
-		(line (pt 96 32)(pt 80 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 80 80))
-	)
-)
-(symbol
-	(rect 256 1472 352 1568)
-	(text "SameBit" (rect 5 0 54 13)(font "Arial" (font_size 8)))
-	(text "inst17" (rect 8 81 38 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "Ain" (rect 0 0 20 13)(font "Arial" (font_size 8)))
-		(text "Ain" (rect 21 27 41 40)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 96 32)
-		(output)
-		(text "Aout" (rect 0 0 27 13)(font "Arial" (font_size 8)))
-		(text "Aout" (rect 48 27 75 40)(font "Arial" (font_size 8)))
-		(line (pt 96 32)(pt 80 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 80 80))
-	)
-)
-(symbol
-	(rect 256 1568 352 1664)
-	(text "SameBit" (rect 5 0 54 13)(font "Arial" (font_size 8)))
-	(text "inst18" (rect 8 81 38 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "Ain" (rect 0 0 20 13)(font "Arial" (font_size 8)))
-		(text "Ain" (rect 21 27 41 40)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 96 32)
-		(output)
-		(text "Aout" (rect 0 0 27 13)(font "Arial" (font_size 8)))
-		(text "Aout" (rect 48 27 75 40)(font "Arial" (font_size 8)))
-		(line (pt 96 32)(pt 80 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 80 80))
-	)
-)
-(symbol
-	(rect 256 1664 352 1760)
-	(text "SameBit" (rect 5 0 54 13)(font "Arial" (font_size 8)))
-	(text "inst19" (rect 8 81 38 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "Ain" (rect 0 0 20 13)(font "Arial" (font_size 8)))
-		(text "Ain" (rect 21 27 41 40)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 96 32)
-		(output)
-		(text "Aout" (rect 0 0 27 13)(font "Arial" (font_size 8)))
-		(text "Aout" (rect 48 27 75 40)(font "Arial" (font_size 8)))
-		(line (pt 96 32)(pt 80 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 80 80))
-	)
-)
-(symbol
-	(rect 256 1760 352 1856)
-	(text "SameBit" (rect 5 0 54 13)(font "Arial" (font_size 8)))
-	(text "inst20" (rect 8 81 38 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "Ain" (rect 0 0 20 13)(font "Arial" (font_size 8)))
-		(text "Ain" (rect 21 27 41 40)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 96 32)
-		(output)
-		(text "Aout" (rect 0 0 27 13)(font "Arial" (font_size 8)))
-		(text "Aout" (rect 48 27 75 40)(font "Arial" (font_size 8)))
-		(line (pt 96 32)(pt 80 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 80 80))
-	)
-)
-(symbol
-	(rect 256 1856 352 1952)
-	(text "SameBit" (rect 5 0 54 13)(font "Arial" (font_size 8)))
-	(text "inst21" (rect 8 81 37 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "Ain" (rect 0 0 20 13)(font "Arial" (font_size 8)))
-		(text "Ain" (rect 21 27 41 40)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 96 32)
-		(output)
-		(text "Aout" (rect 0 0 27 13)(font "Arial" (font_size 8)))
-		(text "Aout" (rect 48 27 75 40)(font "Arial" (font_size 8)))
-		(line (pt 96 32)(pt 80 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 80 80))
-	)
-)
-(symbol
-	(rect 256 1952 352 2048)
-	(text "SameBit" (rect 5 0 54 13)(font "Arial" (font_size 8)))
-	(text "inst22" (rect 8 81 38 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "Ain" (rect 0 0 20 13)(font "Arial" (font_size 8)))
-		(text "Ain" (rect 21 27 41 40)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 96 32)
-		(output)
-		(text "Aout" (rect 0 0 27 13)(font "Arial" (font_size 8)))
-		(text "Aout" (rect 48 27 75 40)(font "Arial" (font_size 8)))
-		(line (pt 96 32)(pt 80 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 80 80))
-	)
-)
-(symbol
-	(rect 256 2048 352 2144)
-	(text "SameBit" (rect 5 0 54 13)(font "Arial" (font_size 8)))
-	(text "inst23" (rect 8 81 38 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "Ain" (rect 0 0 20 13)(font "Arial" (font_size 8)))
-		(text "Ain" (rect 21 27 41 40)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 96 32)
-		(output)
-		(text "Aout" (rect 0 0 27 13)(font "Arial" (font_size 8)))
-		(text "Aout" (rect 48 27 75 40)(font "Arial" (font_size 8)))
-		(line (pt 96 32)(pt 80 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 80 80))
-	)
-)
-(symbol
-	(rect 256 2144 352 2240)
-	(text "SameBit" (rect 5 0 54 13)(font "Arial" (font_size 8)))
-	(text "inst24" (rect 8 81 38 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "Ain" (rect 0 0 20 13)(font "Arial" (font_size 8)))
-		(text "Ain" (rect 21 27 41 40)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 96 32)
-		(output)
-		(text "Aout" (rect 0 0 27 13)(font "Arial" (font_size 8)))
-		(text "Aout" (rect 48 27 75 40)(font "Arial" (font_size 8)))
-		(line (pt 96 32)(pt 80 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 80 80))
-	)
-)
-(symbol
-	(rect 256 2240 352 2336)
-	(text "SameBit" (rect 5 0 54 13)(font "Arial" (font_size 8)))
-	(text "inst25" (rect 8 81 38 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "Ain" (rect 0 0 20 13)(font "Arial" (font_size 8)))
-		(text "Ain" (rect 21 27 41 40)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 96 32)
-		(output)
-		(text "Aout" (rect 0 0 27 13)(font "Arial" (font_size 8)))
-		(text "Aout" (rect 48 27 75 40)(font "Arial" (font_size 8)))
-		(line (pt 96 32)(pt 80 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 80 80))
-	)
-)
-(symbol
-	(rect 256 2336 352 2432)
-	(text "SameBit" (rect 5 0 54 13)(font "Arial" (font_size 8)))
-	(text "inst26" (rect 8 81 38 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "Ain" (rect 0 0 20 13)(font "Arial" (font_size 8)))
-		(text "Ain" (rect 21 27 41 40)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 96 32)
-		(output)
-		(text "Aout" (rect 0 0 27 13)(font "Arial" (font_size 8)))
-		(text "Aout" (rect 48 27 75 40)(font "Arial" (font_size 8)))
-		(line (pt 96 32)(pt 80 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 80 80))
-	)
-)
-(symbol
-	(rect 256 2432 352 2528)
-	(text "SameBit" (rect 5 0 54 13)(font "Arial" (font_size 8)))
-	(text "inst27" (rect 8 81 38 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "Ain" (rect 0 0 20 13)(font "Arial" (font_size 8)))
-		(text "Ain" (rect 21 27 41 40)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 96 32)
-		(output)
-		(text "Aout" (rect 0 0 27 13)(font "Arial" (font_size 8)))
-		(text "Aout" (rect 48 27 75 40)(font "Arial" (font_size 8)))
-		(line (pt 96 32)(pt 80 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 80 80))
-	)
-)
-(symbol
-	(rect 256 2528 352 2624)
-	(text "SameBit" (rect 5 0 54 13)(font "Arial" (font_size 8)))
-	(text "inst28" (rect 8 81 38 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "Ain" (rect 0 0 20 13)(font "Arial" (font_size 8)))
-		(text "Ain" (rect 21 27 41 40)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 96 32)
-		(output)
-		(text "Aout" (rect 0 0 27 13)(font "Arial" (font_size 8)))
-		(text "Aout" (rect 48 27 75 40)(font "Arial" (font_size 8)))
-		(line (pt 96 32)(pt 80 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 80 80))
-	)
-)
-(symbol
-	(rect 256 2624 352 2720)
-	(text "SameBit" (rect 5 0 54 13)(font "Arial" (font_size 8)))
-	(text "inst29" (rect 8 81 38 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "Ain" (rect 0 0 20 13)(font "Arial" (font_size 8)))
-		(text "Ain" (rect 21 27 41 40)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 96 32)
-		(output)
-		(text "Aout" (rect 0 0 27 13)(font "Arial" (font_size 8)))
-		(text "Aout" (rect 48 27 75 40)(font "Arial" (font_size 8)))
-		(line (pt 96 32)(pt 80 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 80 80))
-	)
-)
-(symbol
-	(rect 256 2720 352 2816)
-	(text "SameBit" (rect 5 0 54 13)(font "Arial" (font_size 8)))
-	(text "inst30" (rect 8 81 38 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "Ain" (rect 0 0 20 13)(font "Arial" (font_size 8)))
-		(text "Ain" (rect 21 27 41 40)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 96 32)
-		(output)
-		(text "Aout" (rect 0 0 27 13)(font "Arial" (font_size 8)))
-		(text "Aout" (rect 48 27 75 40)(font "Arial" (font_size 8)))
+		(text "Aout" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "Aout" (rect 48 27 75 41)(font "Arial" (font_size 8)))
 		(line (pt 96 32)(pt 80 32))
 	)
 	(drawing
@@ -714,20 +75,20 @@ agreement for further details.
 )
 (symbol
 	(rect 256 2816 352 2912)
-	(text "SameBit" (rect 5 0 54 13)(font "Arial" (font_size 8)))
-	(text "inst31" (rect 8 81 37 92)(font "Arial" ))
+	(text "SameBit" (rect 5 0 51 14)(font "Arial" (font_size 8)))
+	(text "bit01" (rect 8 81 31 93)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
-		(text "Ain" (rect 0 0 20 13)(font "Arial" (font_size 8)))
-		(text "Ain" (rect 21 27 41 40)(font "Arial" (font_size 8)))
+		(text "Ain" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "Ain" (rect 21 27 39 41)(font "Arial" (font_size 8)))
 		(line (pt 0 32)(pt 16 32))
 	)
 	(port
 		(pt 96 32)
 		(output)
-		(text "Aout" (rect 0 0 27 13)(font "Arial" (font_size 8)))
-		(text "Aout" (rect 48 27 75 40)(font "Arial" (font_size 8)))
+		(text "Aout" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "Aout" (rect 48 27 75 41)(font "Arial" (font_size 8)))
 		(line (pt 96 32)(pt 80 32))
 	)
 	(drawing
@@ -735,21 +96,659 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect 256 2912 352 3008)
-	(text "SameBit" (rect 5 0 54 13)(font "Arial" (font_size 8)))
-	(text "inst32" (rect 8 81 38 92)(font "Arial" ))
+	(rect 256 2720 352 2816)
+	(text "SameBit" (rect 5 0 51 14)(font "Arial" (font_size 8)))
+	(text "bit02" (rect 8 81 31 93)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
-		(text "Ain" (rect 0 0 20 13)(font "Arial" (font_size 8)))
-		(text "Ain" (rect 21 27 41 40)(font "Arial" (font_size 8)))
+		(text "Ain" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "Ain" (rect 21 27 39 41)(font "Arial" (font_size 8)))
 		(line (pt 0 32)(pt 16 32))
 	)
 	(port
 		(pt 96 32)
 		(output)
-		(text "Aout" (rect 0 0 27 13)(font "Arial" (font_size 8)))
-		(text "Aout" (rect 48 27 75 40)(font "Arial" (font_size 8)))
+		(text "Aout" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "Aout" (rect 48 27 75 41)(font "Arial" (font_size 8)))
+		(line (pt 96 32)(pt 80 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 80 80))
+	)
+)
+(symbol
+	(rect 256 2624 352 2720)
+	(text "SameBit" (rect 5 0 51 14)(font "Arial" (font_size 8)))
+	(text "bit03" (rect 8 81 31 93)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Ain" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "Ain" (rect 21 27 39 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 96 32)
+		(output)
+		(text "Aout" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "Aout" (rect 48 27 75 41)(font "Arial" (font_size 8)))
+		(line (pt 96 32)(pt 80 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 80 80))
+	)
+)
+(symbol
+	(rect 256 2528 352 2624)
+	(text "SameBit" (rect 5 0 51 14)(font "Arial" (font_size 8)))
+	(text "bit04" (rect 8 81 31 93)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Ain" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "Ain" (rect 21 27 39 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 96 32)
+		(output)
+		(text "Aout" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "Aout" (rect 48 27 75 41)(font "Arial" (font_size 8)))
+		(line (pt 96 32)(pt 80 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 80 80))
+	)
+)
+(symbol
+	(rect 256 2432 352 2528)
+	(text "SameBit" (rect 5 0 51 14)(font "Arial" (font_size 8)))
+	(text "bit05" (rect 8 81 31 93)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Ain" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "Ain" (rect 21 27 39 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 96 32)
+		(output)
+		(text "Aout" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "Aout" (rect 48 27 75 41)(font "Arial" (font_size 8)))
+		(line (pt 96 32)(pt 80 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 80 80))
+	)
+)
+(symbol
+	(rect 256 2336 352 2432)
+	(text "SameBit" (rect 5 0 51 14)(font "Arial" (font_size 8)))
+	(text "bit06" (rect 8 81 31 93)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Ain" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "Ain" (rect 21 27 39 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 96 32)
+		(output)
+		(text "Aout" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "Aout" (rect 48 27 75 41)(font "Arial" (font_size 8)))
+		(line (pt 96 32)(pt 80 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 80 80))
+	)
+)
+(symbol
+	(rect 256 2240 352 2336)
+	(text "SameBit" (rect 5 0 51 14)(font "Arial" (font_size 8)))
+	(text "bit07" (rect 8 81 31 93)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Ain" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "Ain" (rect 21 27 39 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 96 32)
+		(output)
+		(text "Aout" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "Aout" (rect 48 27 75 41)(font "Arial" (font_size 8)))
+		(line (pt 96 32)(pt 80 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 80 80))
+	)
+)
+(symbol
+	(rect 256 2144 352 2240)
+	(text "SameBit" (rect 5 0 51 14)(font "Arial" (font_size 8)))
+	(text "bit08" (rect 8 81 31 93)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Ain" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "Ain" (rect 21 27 39 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 96 32)
+		(output)
+		(text "Aout" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "Aout" (rect 48 27 75 41)(font "Arial" (font_size 8)))
+		(line (pt 96 32)(pt 80 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 80 80))
+	)
+)
+(symbol
+	(rect 256 2048 352 2144)
+	(text "SameBit" (rect 5 0 51 14)(font "Arial" (font_size 8)))
+	(text "bit09" (rect 8 81 31 93)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Ain" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "Ain" (rect 21 27 39 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 96 32)
+		(output)
+		(text "Aout" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "Aout" (rect 48 27 75 41)(font "Arial" (font_size 8)))
+		(line (pt 96 32)(pt 80 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 80 80))
+	)
+)
+(symbol
+	(rect 256 1952 352 2048)
+	(text "SameBit" (rect 5 0 51 14)(font "Arial" (font_size 8)))
+	(text "bit10" (rect 8 81 31 93)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Ain" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "Ain" (rect 21 27 39 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 96 32)
+		(output)
+		(text "Aout" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "Aout" (rect 48 27 75 41)(font "Arial" (font_size 8)))
+		(line (pt 96 32)(pt 80 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 80 80))
+	)
+)
+(symbol
+	(rect 256 1856 352 1952)
+	(text "SameBit" (rect 5 0 51 14)(font "Arial" (font_size 8)))
+	(text "bit11" (rect 8 81 31 93)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Ain" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "Ain" (rect 21 27 39 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 96 32)
+		(output)
+		(text "Aout" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "Aout" (rect 48 27 75 41)(font "Arial" (font_size 8)))
+		(line (pt 96 32)(pt 80 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 80 80))
+	)
+)
+(symbol
+	(rect 256 1760 352 1856)
+	(text "SameBit" (rect 5 0 51 14)(font "Arial" (font_size 8)))
+	(text "bit12" (rect 8 81 31 93)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Ain" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "Ain" (rect 21 27 39 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 96 32)
+		(output)
+		(text "Aout" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "Aout" (rect 48 27 75 41)(font "Arial" (font_size 8)))
+		(line (pt 96 32)(pt 80 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 80 80))
+	)
+)
+(symbol
+	(rect 256 1664 352 1760)
+	(text "SameBit" (rect 5 0 51 14)(font "Arial" (font_size 8)))
+	(text "bit13" (rect 8 81 31 93)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Ain" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "Ain" (rect 21 27 39 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 96 32)
+		(output)
+		(text "Aout" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "Aout" (rect 48 27 75 41)(font "Arial" (font_size 8)))
+		(line (pt 96 32)(pt 80 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 80 80))
+	)
+)
+(symbol
+	(rect 256 1568 352 1664)
+	(text "SameBit" (rect 5 0 51 14)(font "Arial" (font_size 8)))
+	(text "bit14" (rect 8 81 31 93)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Ain" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "Ain" (rect 21 27 39 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 96 32)
+		(output)
+		(text "Aout" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "Aout" (rect 48 27 75 41)(font "Arial" (font_size 8)))
+		(line (pt 96 32)(pt 80 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 80 80))
+	)
+)
+(symbol
+	(rect 256 1472 352 1568)
+	(text "SameBit" (rect 5 0 51 14)(font "Arial" (font_size 8)))
+	(text "bit15" (rect 8 81 31 93)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Ain" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "Ain" (rect 21 27 39 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 96 32)
+		(output)
+		(text "Aout" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "Aout" (rect 48 27 75 41)(font "Arial" (font_size 8)))
+		(line (pt 96 32)(pt 80 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 80 80))
+	)
+)
+(symbol
+	(rect 256 1376 352 1472)
+	(text "SameBit" (rect 5 0 51 14)(font "Arial" (font_size 8)))
+	(text "bit16" (rect 8 81 31 93)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Ain" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "Ain" (rect 21 27 39 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 96 32)
+		(output)
+		(text "Aout" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "Aout" (rect 48 27 75 41)(font "Arial" (font_size 8)))
+		(line (pt 96 32)(pt 80 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 80 80))
+	)
+)
+(symbol
+	(rect 256 1280 352 1376)
+	(text "SameBit" (rect 5 0 51 14)(font "Arial" (font_size 8)))
+	(text "bit17" (rect 8 81 31 93)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Ain" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "Ain" (rect 21 27 39 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 96 32)
+		(output)
+		(text "Aout" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "Aout" (rect 48 27 75 41)(font "Arial" (font_size 8)))
+		(line (pt 96 32)(pt 80 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 80 80))
+	)
+)
+(symbol
+	(rect 256 1184 352 1280)
+	(text "SameBit" (rect 5 0 51 14)(font "Arial" (font_size 8)))
+	(text "bit18" (rect 8 81 31 93)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Ain" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "Ain" (rect 21 27 39 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 96 32)
+		(output)
+		(text "Aout" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "Aout" (rect 48 27 75 41)(font "Arial" (font_size 8)))
+		(line (pt 96 32)(pt 80 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 80 80))
+	)
+)
+(symbol
+	(rect 256 1088 352 1184)
+	(text "SameBit" (rect 5 0 51 14)(font "Arial" (font_size 8)))
+	(text "bit19" (rect 8 81 31 93)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Ain" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "Ain" (rect 21 27 39 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 96 32)
+		(output)
+		(text "Aout" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "Aout" (rect 48 27 75 41)(font "Arial" (font_size 8)))
+		(line (pt 96 32)(pt 80 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 80 80))
+	)
+)
+(symbol
+	(rect 256 992 352 1088)
+	(text "SameBit" (rect 5 0 51 14)(font "Arial" (font_size 8)))
+	(text "bit20" (rect 8 81 31 93)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Ain" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "Ain" (rect 21 27 39 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 96 32)
+		(output)
+		(text "Aout" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "Aout" (rect 48 27 75 41)(font "Arial" (font_size 8)))
+		(line (pt 96 32)(pt 80 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 80 80))
+	)
+)
+(symbol
+	(rect 256 896 352 992)
+	(text "SameBit" (rect 5 0 51 14)(font "Arial" (font_size 8)))
+	(text "bit21" (rect 8 81 31 93)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Ain" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "Ain" (rect 21 27 39 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 96 32)
+		(output)
+		(text "Aout" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "Aout" (rect 48 27 75 41)(font "Arial" (font_size 8)))
+		(line (pt 96 32)(pt 80 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 80 80))
+	)
+)
+(symbol
+	(rect 256 800 352 896)
+	(text "SameBit" (rect 5 0 51 14)(font "Arial" (font_size 8)))
+	(text "bit22" (rect 8 81 31 93)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Ain" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "Ain" (rect 21 27 39 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 96 32)
+		(output)
+		(text "Aout" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "Aout" (rect 48 27 75 41)(font "Arial" (font_size 8)))
+		(line (pt 96 32)(pt 80 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 80 80))
+	)
+)
+(symbol
+	(rect 256 704 352 800)
+	(text "SameBit" (rect 5 0 51 14)(font "Arial" (font_size 8)))
+	(text "bit23" (rect 8 81 31 93)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Ain" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "Ain" (rect 21 27 39 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 96 32)
+		(output)
+		(text "Aout" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "Aout" (rect 48 27 75 41)(font "Arial" (font_size 8)))
+		(line (pt 96 32)(pt 80 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 80 80))
+	)
+)
+(symbol
+	(rect 256 608 352 704)
+	(text "SameBit" (rect 5 0 51 14)(font "Arial" (font_size 8)))
+	(text "bit24" (rect 8 81 31 93)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Ain" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "Ain" (rect 21 27 39 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 96 32)
+		(output)
+		(text "Aout" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "Aout" (rect 48 27 75 41)(font "Arial" (font_size 8)))
+		(line (pt 96 32)(pt 80 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 80 80))
+	)
+)
+(symbol
+	(rect 256 512 352 608)
+	(text "SameBit" (rect 5 0 51 14)(font "Arial" (font_size 8)))
+	(text "bit25" (rect 8 81 31 93)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Ain" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "Ain" (rect 21 27 39 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 96 32)
+		(output)
+		(text "Aout" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "Aout" (rect 48 27 75 41)(font "Arial" (font_size 8)))
+		(line (pt 96 32)(pt 80 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 80 80))
+	)
+)
+(symbol
+	(rect 256 416 352 512)
+	(text "SameBit" (rect 5 0 51 14)(font "Arial" (font_size 8)))
+	(text "bit26" (rect 8 81 31 93)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Ain" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "Ain" (rect 21 27 39 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 96 32)
+		(output)
+		(text "Aout" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "Aout" (rect 48 27 75 41)(font "Arial" (font_size 8)))
+		(line (pt 96 32)(pt 80 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 80 80))
+	)
+)
+(symbol
+	(rect 256 320 352 416)
+	(text "SameBit" (rect 5 0 51 14)(font "Arial" (font_size 8)))
+	(text "bit27" (rect 8 81 31 93)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Ain" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "Ain" (rect 21 27 39 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 96 32)
+		(output)
+		(text "Aout" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "Aout" (rect 48 27 75 41)(font "Arial" (font_size 8)))
+		(line (pt 96 32)(pt 80 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 80 80))
+	)
+)
+(symbol
+	(rect 256 224 352 320)
+	(text "SameBit" (rect 5 0 51 14)(font "Arial" (font_size 8)))
+	(text "bit28" (rect 8 81 31 93)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Ain" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "Ain" (rect 21 27 39 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 96 32)
+		(output)
+		(text "Aout" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "Aout" (rect 48 27 75 41)(font "Arial" (font_size 8)))
+		(line (pt 96 32)(pt 80 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 80 80))
+	)
+)
+(symbol
+	(rect 256 128 352 224)
+	(text "SameBit" (rect 5 0 51 14)(font "Arial" (font_size 8)))
+	(text "bit29" (rect 8 81 31 93)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Ain" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "Ain" (rect 21 27 39 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 96 32)
+		(output)
+		(text "Aout" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "Aout" (rect 48 27 75 41)(font "Arial" (font_size 8)))
+		(line (pt 96 32)(pt 80 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 80 80))
+	)
+)
+(symbol
+	(rect 256 32 352 128)
+	(text "SameBit" (rect 5 0 51 14)(font "Arial" (font_size 8)))
+	(text "bit30" (rect 8 81 31 93)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Ain" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "Ain" (rect 21 27 39 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 96 32)
+		(output)
+		(text "Aout" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "Aout" (rect 48 27 75 41)(font "Arial" (font_size 8)))
+		(line (pt 96 32)(pt 80 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 80 80))
+	)
+)
+(symbol
+	(rect 256 -64 352 32)
+	(text "SameBit" (rect 5 0 51 14)(font "Arial" (font_size 8)))
+	(text "bit31" (rect 8 81 31 93)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Ain" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "Ain" (rect 21 27 39 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 96 32)
+		(output)
+		(text "Aout" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "Aout" (rect 48 27 75 41)(font "Arial" (font_size 8)))
 		(line (pt 96 32)(pt 80 32))
 	)
 	(drawing
@@ -762,7 +761,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "A[0]" (rect 136 2928 156 2939)(font "Arial" ))
+	(text "A[0]" (rect 136 2928 156 2940)(font "Arial" ))
 	(pt 128 2944)
 	(pt 256 2944)
 )
@@ -772,7 +771,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "A[1]" (rect 136 2832 156 2843)(font "Arial" ))
+	(text "A[1]" (rect 136 2832 156 2844)(font "Arial" ))
 	(pt 128 2848)
 	(pt 256 2848)
 )
@@ -782,7 +781,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "A[2]" (rect 136 2736 156 2747)(font "Arial" ))
+	(text "A[2]" (rect 136 2736 156 2748)(font "Arial" ))
 	(pt 128 2752)
 	(pt 256 2752)
 )
@@ -792,7 +791,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "A[3]" (rect 136 2640 156 2651)(font "Arial" ))
+	(text "A[3]" (rect 136 2640 156 2652)(font "Arial" ))
 	(pt 128 2656)
 	(pt 256 2656)
 )
@@ -802,7 +801,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "A[4]" (rect 136 2544 156 2555)(font "Arial" ))
+	(text "A[4]" (rect 136 2544 156 2556)(font "Arial" ))
 	(pt 128 2560)
 	(pt 256 2560)
 )
@@ -812,7 +811,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "A[5]" (rect 136 2448 156 2459)(font "Arial" ))
+	(text "A[5]" (rect 136 2448 156 2460)(font "Arial" ))
 	(pt 128 2464)
 	(pt 256 2464)
 )
@@ -822,7 +821,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "A[6]" (rect 136 2352 156 2363)(font "Arial" ))
+	(text "A[6]" (rect 136 2352 156 2364)(font "Arial" ))
 	(pt 128 2368)
 	(pt 256 2368)
 )
@@ -832,7 +831,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "A[7]" (rect 136 2256 156 2267)(font "Arial" ))
+	(text "A[7]" (rect 136 2256 156 2268)(font "Arial" ))
 	(pt 128 2272)
 	(pt 256 2272)
 )
@@ -842,7 +841,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "A[8]" (rect 136 2160 156 2171)(font "Arial" ))
+	(text "A[8]" (rect 136 2160 156 2172)(font "Arial" ))
 	(pt 128 2176)
 	(pt 256 2176)
 )
@@ -852,7 +851,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "A[9]" (rect 136 2064 156 2075)(font "Arial" ))
+	(text "A[9]" (rect 136 2064 156 2076)(font "Arial" ))
 	(pt 128 2080)
 	(pt 256 2080)
 )
@@ -862,7 +861,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "A[10]" (rect 136 1968 161 1979)(font "Arial" ))
+	(text "A[10]" (rect 136 1968 161 1980)(font "Arial" ))
 	(pt 128 1984)
 	(pt 256 1984)
 )
@@ -872,7 +871,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "A[11]" (rect 136 1872 161 1883)(font "Arial" ))
+	(text "A[11]" (rect 136 1872 161 1884)(font "Arial" ))
 	(pt 128 1888)
 	(pt 256 1888)
 )
@@ -882,7 +881,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "A[12]" (rect 136 1776 161 1787)(font "Arial" ))
+	(text "A[12]" (rect 136 1776 161 1788)(font "Arial" ))
 	(pt 128 1792)
 	(pt 256 1792)
 )
@@ -892,7 +891,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "A[13]" (rect 136 1680 161 1691)(font "Arial" ))
+	(text "A[13]" (rect 136 1680 161 1692)(font "Arial" ))
 	(pt 128 1696)
 	(pt 256 1696)
 )
@@ -902,7 +901,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "A[14]" (rect 136 1584 161 1595)(font "Arial" ))
+	(text "A[14]" (rect 136 1584 161 1596)(font "Arial" ))
 	(pt 128 1600)
 	(pt 256 1600)
 )
@@ -1024,7 +1023,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "Y[31]" (rect 360 -48 385 -37)(font "Arial" ))
+	(text "Y[31]" (rect 360 -48 387 -36)(font "Arial" ))
 	(pt 352 -32)
 	(pt 400 -32)
 )
@@ -1034,7 +1033,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "Y[30]" (rect 360 48 385 59)(font "Arial" ))
+	(text "Y[30]" (rect 360 48 387 60)(font "Arial" ))
 	(pt 352 64)
 	(pt 400 64)
 )
@@ -1044,7 +1043,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "Y[29]" (rect 360 144 385 155)(font "Arial" ))
+	(text "Y[29]" (rect 360 144 387 156)(font "Arial" ))
 	(pt 352 160)
 	(pt 400 160)
 )
@@ -1054,7 +1053,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "Y[28]" (rect 360 240 385 251)(font "Arial" ))
+	(text "Y[28]" (rect 360 240 387 252)(font "Arial" ))
 	(pt 352 256)
 	(pt 400 256)
 )
@@ -1064,7 +1063,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "Y[27]" (rect 360 336 385 347)(font "Arial" ))
+	(text "Y[27]" (rect 360 336 387 348)(font "Arial" ))
 	(pt 352 352)
 	(pt 400 352)
 )
@@ -1074,7 +1073,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "Y[26]" (rect 360 432 385 443)(font "Arial" ))
+	(text "Y[26]" (rect 360 432 387 444)(font "Arial" ))
 	(pt 352 448)
 	(pt 400 448)
 )
@@ -1084,7 +1083,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "Y[25]" (rect 360 528 385 539)(font "Arial" ))
+	(text "Y[25]" (rect 360 528 387 540)(font "Arial" ))
 	(pt 352 544)
 	(pt 400 544)
 )
@@ -1094,7 +1093,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "Y[24]" (rect 360 624 385 635)(font "Arial" ))
+	(text "Y[24]" (rect 360 624 387 636)(font "Arial" ))
 	(pt 352 640)
 	(pt 400 640)
 )
@@ -1104,7 +1103,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "Y[23]" (rect 360 720 385 731)(font "Arial" ))
+	(text "Y[23]" (rect 360 720 387 732)(font "Arial" ))
 	(pt 352 736)
 	(pt 400 736)
 )
@@ -1114,7 +1113,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "Y[22]" (rect 360 816 385 827)(font "Arial" ))
+	(text "Y[22]" (rect 360 816 387 828)(font "Arial" ))
 	(pt 352 832)
 	(pt 400 832)
 )
@@ -1124,7 +1123,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "Y[21]" (rect 360 912 385 923)(font "Arial" ))
+	(text "Y[21]" (rect 360 912 387 924)(font "Arial" ))
 	(pt 352 928)
 	(pt 400 928)
 )
@@ -1134,7 +1133,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "Y[20]" (rect 360 1008 385 1019)(font "Arial" ))
+	(text "Y[20]" (rect 360 1008 387 1020)(font "Arial" ))
 	(pt 352 1024)
 	(pt 400 1024)
 )
@@ -1144,7 +1143,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "Y[19]" (rect 360 1104 385 1115)(font "Arial" ))
+	(text "Y[19]" (rect 360 1104 387 1116)(font "Arial" ))
 	(pt 352 1120)
 	(pt 400 1120)
 )
@@ -1154,7 +1153,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "Y[18]" (rect 360 1200 385 1211)(font "Arial" ))
+	(text "Y[18]" (rect 360 1200 387 1212)(font "Arial" ))
 	(pt 352 1216)
 	(pt 400 1216)
 )
@@ -1164,7 +1163,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "Y[17]" (rect 360 1296 385 1307)(font "Arial" ))
+	(text "Y[17]" (rect 360 1296 387 1308)(font "Arial" ))
 	(pt 352 1312)
 	(pt 400 1312)
 )
@@ -1174,7 +1173,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "Y[16]" (rect 360 1392 385 1403)(font "Arial" ))
+	(text "Y[16]" (rect 360 1392 387 1404)(font "Arial" ))
 	(pt 352 1408)
 	(pt 400 1408)
 )
@@ -1184,7 +1183,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "Y[15]" (rect 360 1488 385 1499)(font "Arial" ))
+	(text "Y[15]" (rect 360 1488 387 1500)(font "Arial" ))
 	(pt 352 1504)
 	(pt 400 1504)
 )
@@ -1194,7 +1193,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "Y[14]" (rect 360 1584 385 1595)(font "Arial" ))
+	(text "Y[14]" (rect 360 1584 387 1596)(font "Arial" ))
 	(pt 352 1600)
 	(pt 400 1600)
 )
@@ -1204,7 +1203,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "Y[13]" (rect 360 1680 385 1691)(font "Arial" ))
+	(text "Y[13]" (rect 360 1680 387 1692)(font "Arial" ))
 	(pt 352 1696)
 	(pt 400 1696)
 )
@@ -1214,7 +1213,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "Y[12]" (rect 360 1776 385 1787)(font "Arial" ))
+	(text "Y[12]" (rect 360 1776 387 1788)(font "Arial" ))
 	(pt 352 1792)
 	(pt 400 1792)
 )
@@ -1224,7 +1223,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "Y[11]" (rect 360 1872 385 1883)(font "Arial" ))
+	(text "Y[11]" (rect 360 1872 387 1884)(font "Arial" ))
 	(pt 352 1888)
 	(pt 400 1888)
 )
@@ -1234,7 +1233,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "Y[10]" (rect 360 1968 385 1979)(font "Arial" ))
+	(text "Y[10]" (rect 360 1968 387 1980)(font "Arial" ))
 	(pt 352 1984)
 	(pt 400 1984)
 )
@@ -1244,7 +1243,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "Y[9]" (rect 360 2064 380 2075)(font "Arial" ))
+	(text "Y[9]" (rect 360 2064 381 2076)(font "Arial" ))
 	(pt 352 2080)
 	(pt 400 2080)
 )
@@ -1254,7 +1253,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "Y[8]" (rect 360 2160 380 2171)(font "Arial" ))
+	(text "Y[8]" (rect 360 2160 381 2172)(font "Arial" ))
 	(pt 352 2176)
 	(pt 400 2176)
 )
@@ -1264,7 +1263,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "Y[7]" (rect 360 2256 380 2267)(font "Arial" ))
+	(text "Y[7]" (rect 360 2256 381 2268)(font "Arial" ))
 	(pt 352 2272)
 	(pt 400 2272)
 )
@@ -1274,7 +1273,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "Y[6]" (rect 360 2352 380 2363)(font "Arial" ))
+	(text "Y[6]" (rect 360 2352 381 2364)(font "Arial" ))
 	(pt 352 2368)
 	(pt 400 2368)
 )
@@ -1284,7 +1283,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "Y[5]" (rect 360 2448 380 2459)(font "Arial" ))
+	(text "Y[5]" (rect 360 2448 381 2460)(font "Arial" ))
 	(pt 352 2464)
 	(pt 400 2464)
 )
@@ -1294,7 +1293,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "Y[4]" (rect 360 2544 380 2555)(font "Arial" ))
+	(text "Y[4]" (rect 360 2544 381 2556)(font "Arial" ))
 	(pt 352 2560)
 	(pt 400 2560)
 )
@@ -1304,7 +1303,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "Y[3]" (rect 360 2640 380 2651)(font "Arial" ))
+	(text "Y[3]" (rect 360 2640 381 2652)(font "Arial" ))
 	(pt 352 2656)
 	(pt 400 2656)
 )
@@ -1314,17 +1313,17 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "Y[2]" (rect 360 2736 380 2747)(font "Arial" ))
+	(text "Y[2]" (rect 360 2736 381 2748)(font "Arial" ))
 	(pt 352 2752)
 	(pt 400 2752)
 )
 (connector
-	(text "Y[1]" (rect 360 2832 380 2843)(font "Arial" ))
+	(text "Y[1]" (rect 360 2832 381 2844)(font "Arial" ))
 	(pt 352 2848)
 	(pt 400 2848)
 )
 (connector
-	(text "Y[0]" (rect 360 2928 380 2939)(font "Arial" ))
+	(text "Y[0]" (rect 360 2928 381 2940)(font "Arial" ))
 	(pt 352 2944)
 	(pt 400 2944)
 )
@@ -1339,7 +1338,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "A[15]" (rect 136 1488 161 1499)(font "Arial" ))
+	(text "A[15]" (rect 136 1488 161 1500)(font "Arial" ))
 	(pt 128 1504)
 	(pt 256 1504)
 )
@@ -1359,7 +1358,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "A[16]" (rect 208 1392 233 1403)(font "Arial" ))
+	(text "A[16]" (rect 208 1392 233 1404)(font "Arial" ))
 	(pt 128 1408)
 	(pt 256 1408)
 )
@@ -1368,7 +1367,7 @@ agreement for further details.
 	(pt 256 1312)
 )
 (connector
-	(text "A[17]" (rect 136 1296 161 1307)(font "Arial" ))
+	(text "A[17]" (rect 136 1296 161 1308)(font "Arial" ))
 	(pt 128 1312)
 	(pt 208 1312)
 )
